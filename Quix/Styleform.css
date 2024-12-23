@@ -1,0 +1,189 @@
+/* สไตล์สำหรับ body และฟอร์ม */
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    margin: 0;
+
+    padding: 0;
+
+    background-color: #f9f9f9; /* สีพื้นหลังหลัก */
+
+}
+
+form {
+
+    width: 600px;
+
+    margin: 30px auto;
+
+    padding: 20px;
+
+    background-color: #fff; /* สีขาวสำหรับพื้นหลังฟอร์ม */
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+h2 {
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    color: #000; /* สีดำสำหรับหัวข้อ */
+
+    margin-bottom: 10px;
+
+    text-align: left;
+
+}
+
+fieldset {
+
+    margin-bottom: 15px;
+
+    border: 1px solid #ccc;
+
+    padding: 10px;
+
+    border-radius: 5px;
+
+    background-color: #f5f5f5; /* สีเทาอ่อน */
+
+}
+
+legend {
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+    color: #444; /* สีเทาเข้ม */
+
+    padding: 0 10px;
+
+}
+
+label {
+
+    display: inline-block;
+
+    margin: 10px 0;
+
+    color: #333;
+
+    width: 100%;
+
+}
+
+input, select, textarea {
+
+    width: calc(100% - 22px);
+
+    padding: 8px;
+
+    margin-top: 5px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 4px;
+
+    box-sizing: border-box;
+
+}
+
+input[type="radio"],
+
+input[type="checkbox"] {
+
+    width: auto;
+
+    margin-right: 5px;
+
+}
+
+textarea {
+
+    resize: none;
+
+    height: 80px;
+
+}
+
+/* ปุ่มบันทึกและยกเลิก */
+
+.buttons {
+
+    text-align: left; /* จัดให้อยู่ทางซ้าย */
+
+    margin-top: 10px;
+
+}
+
+button {
+
+    padding: 8px 16px;
+
+    font-size: 14px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    margin-right: 10px;
+
+}
+
+#btnSubmit {
+
+    background-color: #0066cc; /* สีฟ้าสำหรับปุ่มบันทึก */
+
+    color: white;
+
+}
+
+#btnSubmit:hover {
+
+    background-color: #004d99; /* สีเข้มขึ้นเมื่อ hover */
+
+}
+
+#btnCancel {
+
+    background-color: #888; /* สีเทาสำหรับปุ่มยกเลิก */
+
+    color: white;
+
+}
+
+#btnCancel:hover {
+
+    background-color: #666; /* สีเทาเข้มขึ้น */
+
+}
+
+/* Placeholder Style */
+
+input::placeholder, textarea::placeholder {
+
+    color: #aaa;
+
+    font-style: italic;
+
+}
+
+/* สไตล์เสริม */
+
+input[type="tel"], input[type="number"] {
+
+    width: 200px;
+
+} 

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="Styleform.css">
+</head>
+
+<body>
+    <form action="check.html">
+
+        <h2>Registration Form</h2>
+
+        <!-- ข้อมูลนิสิต -->
+        <fieldset>
+            <legend><h3>ข้อมูลนิสิต</h3></legend>
+            <label>รหัสนิสิต: <input type="text" name="txtID" placeholder="กรุณาป้อนรหัสนิสิต"></label><br>
+            <!--๕ฎฯฎฆฯ็ษ-->
+            <label>คำนำหน้าชื่อ:
+                <select name="lstTitle">
+                    <option value="นาย">นาย</option>
+                    <option value="นางสาว">นางสาว</option>
+                    <option value="นางสาว">ว่าที่ร้อยตรี</option>
+                    <option value="ไม่ระบุ" selected>Default</option>
+                </select>
+            </label>
+
+            <!--ชื่อ-->
+            <label>ชื่อ: <input type="text" name="txtName" placeholder="ป้อนชื่อ" required></label>
+            <label>นามสกุล: <input type="text" name="txtSurname" placeholder="ป้อนนามสกุล" required></label><br>
+
+            <!--สาขา-->
+            <label>สาขา:
+                <select name="lstMajor">
+                    <option value="วิทยาการคอมพิวเตอร์">วิทยาการคอมพิวเตอร์</option>
+                    <option value="เทคโนโลยีสารสนเทศ">เทคโนโลยีสารสนเทศ</option>
+                    <option value="ซอฟต์แวร์">สถิติ</option>
+                    <option value="ฟิสิกส์">ฟิสิกส์</option>
+                    <option value="วิทยาศาสตร์">เคมี</option>
+                    <option value="วิทยาศาสตร์">ชีวะ</option>
+                    <option value="วิทยาศาสตร์">ครฮต</option>
+                </select>
+            </label><br>
+
+            <!--วันเกิด-->
+            <label>วันเกิด: <input type="date" name="txtHBD"></label><br>
+            <label>เพศ:
+                <input type="radio" name="radSex" value="ชาย"> ชาย
+                <input type="radio" name="radSex" value="หญิง"> หญิง
+                <input type="radio" name="radSex" value="LGTBQ"> LGTBQ
+            </label><br>
+
+            <label>อีเมล: <input type="email" name="txtEmail" placeholder="example@email.com" required></label><br>
+            <label>เว็บ: <input type="url" name="txtWeb" placeholder="https://example.com"></label><br>
+            <label>โปรแกรมที่เคยใช้:
+                <input type="checkbox" name="chkSkill" value="Paint"> Paint
+                <input type="checkbox" name="chkSkill" value="Excel" checked> Excel
+                <input type="checkbox" name="chkSkill" value="PowerPoint"> PowerPoint
+            </label>
+        </fieldset>
+
+        <!-- ข้อมูลผู้ปกครอง -->
+        <fieldset>
+            <legend><h3>ข้อมูลผู้ปกครอง</h3></legend>
+
+            <label>ชื่อผู้ปกครอง: <input type="text" name="txtParentname" placeholder="ป้อนชื่อผู้ปกครอง"
+                    required></label><br>
+            <label>มือถือผู้ปกครอง: <input type="tel" name="txtMobile" pattern="000-000-0000" placeholder="000-000-0000"
+                    required></label><br>
+            <label>รายได้ผู้ปกครอง: <input type="number" name="txtIncome" min="1000" max="300000"
+                    placeholder="1000 - 300000" required> บาท</label><br>
+            <label>ที่อยู่:<br>
+                <textarea name="txtArea" rows="4" cols="50" placeholder="ที่อยู่ผู้ปกครอง"></textarea>
+            </label>
+        </fieldset>
+
+        <!-- ปุ่มบันทึกและยกเลิก -->
+        <div class="buttons">
+            <button type="submit" id="btnSubmit">บันทึก</button>
+            <button type="reset" id="btnCancel">ยกเลิก</button>
+        </div>
+    </form>
+</body>
+
+</html>
+
+
